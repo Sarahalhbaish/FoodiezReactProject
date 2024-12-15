@@ -1,0 +1,83 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.register-page {
+  height: 100vh;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab {
+  flex: 1;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #dee2e6;
+  border-right: none;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  color: #6c757d;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 100px;
+}
+
+.tab.active {
+  background-color: #ffffff;
+  color: #000;
+  border-radius: 100px;
+}
+
+.tabs {
+  display: flex;
+  height: 170px;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 10%;
+  transition: transform 1.5s ease;
+}
+
+.tabs.move-right {
+  transform: translateX(+900%);
+}
+
+.tab-content {
+  width: 50%;
+  transition: transform 1.5s ease, height 2s ease;
+}
+
+.tab-content.move-left {
+  transform: translateX(+60%);
+}
+
+.content {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 60%;
+  background-color: #ffffff;
+  border-radius: 50px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transition: height 1s ease;
+}
+
+.vh-100 {
+  height: auto !important;
+}
+
+.welcoming-statement {
+  transition: transform 1.5s ease;
+  width: 40%;
+  padding: 0px 20px;
+  text-align: -webkit-center;
+}
+
+.welcoming-statement.move-left {
+  transform: translateX(-150%);
+}
