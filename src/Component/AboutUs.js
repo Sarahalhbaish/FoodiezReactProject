@@ -1,9 +1,9 @@
 import React from "react";
-import Logo from "../logo.webp";
+import Logo from "../../src/assets/images/logo.webp";
 
 const AboutUs = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-[#D5E7E0]">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-[#D5E7E0] ">
       <div className=" max-w-lg w-full px-6 py-8 bg-white rounded-md shadow-lg m-20 text-sm">
         <h1 className="text-3xl font-bold text-[#184548] mb-4 flex justify-center text-cinter">
           About Us
