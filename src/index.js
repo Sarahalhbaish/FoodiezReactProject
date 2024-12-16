@@ -8,6 +8,7 @@ import Ingredient from "./Component/Ingredient";
 import Home from "./Component/Home";
 import Cetegories from "./Component/Cetegories";
 import Recipes from "./Component/Recipes";
+import AboutUs from "./Component/AboutUs";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
     element: (
       <div>
         <Nav />
-        <Home />
+        <App />
       </div>
     ),
   },
@@ -56,6 +57,15 @@ const router = createBrowserRouter([
       <div>
         <Nav />
         <Recipes />
+      </div>
+    ),
+  },
+  {
+    path: "/AboutUs",
+    element: (
+      <div>
+        <Nav />
+        <AboutUs />
       </div>
     ),
   },
