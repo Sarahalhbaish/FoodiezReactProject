@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
-import logo from "../logo.webp";
-import R from "../R.png";
+import logo from "../assets/images/logo.webp";
+import R from "../assets/images/R.png";
 
 const Nav = () => {
   const navigate = useNavigate();
