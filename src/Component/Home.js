@@ -2,7 +2,8 @@ import React from "react";
 import "../App.css";
 
 const Home = () => {
-  return (<div className="Home-Page">
+  return (
+    <div className="Home-Page">
       <div className="Wlc-Contanier">
         <h1>Welcome to TRIDISH !!!</h1>
         <h4>
@@ -12,7 +13,8 @@ const Home = () => {
           flavor to your kitchen. Let's cook up something amazing!
         </h4>
       </div>
-    </div>);
-
+    </div>
+  );
+};
 
 export default Home;
