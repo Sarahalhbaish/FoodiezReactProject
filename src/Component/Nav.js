@@ -16,7 +16,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="bg-white justify-center">
+    <nav className="bg-white falx">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex  h-16">
           <Link to="/" className="flex ">
