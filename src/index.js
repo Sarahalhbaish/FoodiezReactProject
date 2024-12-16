@@ -6,7 +6,7 @@ import Nav from "./Component/Nav";
 import RegisterPage from "./Component/RegisterPage";
 import Ingredient from "./Component/Ingredient";
 import Home from "./Component/Home";
-import Cetegories from "./Component/Cetegories";
+import Cetegories from "./Component/CetegoryList";
 import Recipes from "./Component/Recipes";
 import AboutUs from "./Component/AboutUs";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
