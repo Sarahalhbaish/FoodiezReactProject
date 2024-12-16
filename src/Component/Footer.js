@@ -9,7 +9,7 @@ const Footer = () => {
       <div className=" flex justify-content-around">
         <div className="flex space-x-4 justify-content-center">
           <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
-            <img src={instagramIcon} alt="Instagram" className="w-8 h-8" />
+            <img src={instagramIcon} alt="Instagram" className="w-8 h-8 " />
           </a>
           <a href="https://wa.me" target="_blank" rel="noreferrer">
             <img src={whatsappIcon} alt="WhatsApp" className="w-8 h-8" />
