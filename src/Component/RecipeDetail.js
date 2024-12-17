@@ -1,57 +1,49 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import { useParams } from "react-router-dom";
+import React from "react";
+import MargheritaPizza from "../assets/images/MargheritaPizza.jpg";
 
 const RecipeDetail = () => {
-  const { id } = useParams();
-  const [recipe, setRecipe] = useState(null);
-
-  useEffect(() => {
-    const fetchRecipe = async () => {
-      try {
-        const response = await axios.get(
-          `http://localhost:8000/apis/recipes/${id}`
-        );
-        setRecipe(response.data);
-      } catch (error) {
-        console.error("Error fetching recipe:", error);
-      }
-    };
-    fetchRecipe();
-  }, [id]);
-
-  if (!recipe) {
-    return <div className="loader">Loading...</div>;
-  }
-
   return (
-    <div className="container mx-auto p-4 text-purple-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-large">
-      <h1 className="text-4xl font-bold mb-2">recipename</h1>
-      <h2 className="text-xl text-gray-600 mb-4">Category:</h2>
-
-      {recipe.imageUrl && (
-        <img
-          src={recipe.imageUrl}
-          alt={recipe.name}
-          className="w-full h-auto rounded-lg mb-4"
-        />
-      )}
-      <h4 className="text-2xl font-semibold mt-4">Ingredients:</h4>
-      <ul className="list-disc list-inside mb-4">
-        {recipe.ingredients.map((ingredient, index) => (
-          <li key={index} className="text-gray-700">
-            {ingredient}
-          </li>
-        ))}
-      </ul>
-      <h4 className="text-2xl font-semibold">Instructions:</h4>
-      <ol className="list-decimal list-inside mb-4">
-        {recipe.instructions.map((step, index) => (
-          <li key={index} className="text-gray-700">
-            {step}
-          </li>
-        ))}
-      </ol>
+    <div className="bg-[url('./assets//images/pattern.png')]">
+      <div className="flex flex-col items-center justify-center min-h-screen">
+        <div className="max-w-lg px-6 py-8 bg-white rounded-md shadow-lg m-20 text-sm">
+          <h1 className="text-3xl font-bold text-[#184548] mb-4 flex justify-center">
+            Margherita Pizza
+          </h1>
+          <img
+            src={MargheritaPizza}
+            alt="Margherita Pizza"
+            className="h-150 w-250  mb-4 size-m"
+          />
+          <h4 className="text-3xl font-bold text-[#E4655C] mb-4 flex text-justify">
+            Ingredients:
+          </h4>
+          <ol className="max-w-2xl text-[#184548] text-justify px-4 mb-6 list-decimal">
+            <li>Pizza dough</li>
+            <li>Tomato sauce</li>
+            <li>Mozzarella cheese</li>
+            <li>Pepperoni</li>
+            <li>Bell peppers</li>
+            <li>Onions</li>
+            <li>Olive oil</li>
+            <li>Basil</li>
+          </ol>
+          <h4 className="text-3xl font-bold text-[#E4655C] mb-4 flex text-justify">
+            Instructions:
+          </h4>
+          <p className="max-w-2xl text-[#184548] text-justify px-4 mb-6">
+            Preheat the oven to 475°F (245°C). Roll out the pizza dough on a
+            floured surface to your desired thickness. Spread tomato sauce on
+            top, then sprinkle with mozzarella cheese and add toppings
+            (pepperoni, bell peppers, onions). Drizzle some olive oil over the
+            pizza. Bake in the oven for 12-15 minutes until the crust is golden
+            and the cheese is bubbly. Remove from the oven, garnish with fresh
+            basil, slice, and serve.
+          </p>
+          <p className="text-[#184548] text-justify px-4">
+            Thank you for choosing Tridish - where every dish tells a story!
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
