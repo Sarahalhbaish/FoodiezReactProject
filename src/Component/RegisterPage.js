@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import SignUp from "./SignUp";
 import SignIn from "./SignIn";
+import logo from "../assets/images/logo.webp";
+
 
 const RegisterPage = () => {
   const [activeTab, setActiveTab] = useState("SignIn");
@@ -54,11 +56,7 @@ const RegisterPage = () => {
         </div>
 
         <div className={`welcoming-statement ${moveLeft ? "move-left" : ""}`}>
-          <h1>Welcome to Our Platform!</h1>
-          <p>
-            We are excited to have you here. Please choose an option to get
-            started:
-          </p>
+          <img src={logo} alt="Logo"/>
         </div>
       </div>
     </div>

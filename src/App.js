@@ -1,4 +1,4 @@
-import logo from "./assets/images/logo.svg";
+import logo from "../src/assets/images/logo.webp";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import RegisterPage from "./Component/RegisterPage";
