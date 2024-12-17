@@ -1,8 +1,15 @@
 import React from "react";
 import "../App.css";
+import CategoryItem from "./CategoryItem";
+import CategoryList from "./CetegoryList";
+import RecipeList from "./RecipeList ";
 
 const Home = () => {
   return (
+<<<<<<< HEAD
+    <div>
+      <RecipeList />
+=======
     <div className="Home-Page">
       <div className="Wlc-Contanier">
         <h1>Welcome to TRIDISH !!!</h1>
@@ -13,6 +20,7 @@ const Home = () => {
           flavor to your kitchen. Let's cook up something amazing!
         </h4>
       </div>
+>>>>>>> origin/main
     </div>
   );
 };

@@ -7,7 +7,7 @@ import Home from "./Component/Home";
 
 function App() {
   return (
-    <div className="App bg-pattern">
+    <div className="App background">
       <Home />
     </div>
   );
