@@ -4,13 +4,8 @@ body {
   margin: 0;
   padding: 0;
 }
-<<<<<<< HEAD
-.App{
-height: 100vh;
-=======
 .App {
-  height: 100%;
->>>>>>> origin/main
+  height: 100vh;
 }
 .register-page {
   height: 100vh;
@@ -26,9 +21,9 @@ height: 100vh;
 }
 
 :root {
-  --tab-bg: #184548; 
-  --tab-text-color: #e4655c; 
-  --tab-active-bg: #ffffff; 
+  --tab-bg: #184548;
+  --tab-text-color: #e4655c;
+  --tab-active-bg: #ffffff;
   --tab-active-text-color: #184548;
   --tab-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   --tab-font-weight: bold;
@@ -45,32 +40,28 @@ height: 100vh;
   cursor: pointer;
   box-shadow: var(--tab-shadow);
   background-color: #e4655c;
-  color:  #ffffff;
+  color: #ffffff;
   font-weight: var(--tab-font-weight);
   font-size: var(--tab-font-size);
   border-radius: var(--tab-border-radius);
   margin-bottom: var(--tab-margin-bottom);
-  transition: background-color 0.3s ease, color 0.3s ease; 
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 
 .tab.active {
-  background-color: #184548; 
-  color: #ffffff; 
+  background-color: #184548;
+  color: #ffffff;
 }
-
 
 .tab:hover {
   background-color: lighten(var(--tab-bg), 10%);
   color: darken(var(--tab-text-color), 10%);
 }
 
-
 .tab:active {
-  background-color: var(--tab-active-bg); 
+  background-color: var(--tab-active-bg);
   color: var(--tab-text-color);
 }
-
 
 .tabs {
   display: flex;
@@ -94,7 +85,7 @@ height: 100vh;
   transform: translateX(+60%);
 }
 
-.w-100 button{
+.w-100 button {
   background-color: #184548;
 }
 
@@ -141,53 +132,6 @@ height: 100vh;
 .welcoming-statement.move-left {
   transform: translateX(-150%);
 }
-<<<<<<< HEAD
-.category-card{
-  width: 330px;
-  height:360px;
-background-color: #ffffff;
-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-padding: 5px;
-border-radius: 20px;
-}
-.secondory-color{
-  color:#E3655B;
-
-}
-.primary-color{
-  color: #174548;
-}
-.category-image{
-  border-radius: 100%;
-  width: 200px;
-  height:200px
-}
-/* .bg-pattern{
-  background-image: url(./assets//images/pattern.png);
-  background-repeat: repeat;
-  height: 100vh;
-
-} */
-.background {
-  position: relative;
-  width: 100%;
-  height: 100%; /* Adjust size */
-  overflow: hidden;
-}
-
-.background::before {
-  content: "";
-  background: url('./assets//images/pattern.png') repeat center center/cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0.6;
-  z-index: -1; /* Places the image behind content */
-}
-
-=======
 
 .category-card {
   min-width: 300px;
@@ -234,4 +178,3 @@ border-radius: 20px;
   font-family: inherit;
   font-weight: 300;
 }
->>>>>>> origin/main
