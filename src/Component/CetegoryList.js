@@ -7,7 +7,7 @@ const CategoryList = () => {
       <div className="App text-center mt-4 secondory-color">
         <h1 className="font-bold">Category</h1>
 
-        <div className="d-flex p-3 justify-content-center ">
+        <div className="d-flex p-3 justify-content-center flex-warp">
           <CategoryItem />
           <CategoryItem />
           <CategoryItem />
