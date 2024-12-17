@@ -29,7 +29,7 @@ const SignUp = () => {
         >
           <div className="row g-0">
             <div className="col-12 d-flex flex-column align-items-center p-4">
-              <h1 className="text-center fw-bold mb-4">Sign Up</h1>
+              <h1 className="text-center fw-bold mb-4 white-text">Sign Up</h1>
 
               <form className="w-100" onSubmit={handleSubmit}>
                 <div className="mb-4">
