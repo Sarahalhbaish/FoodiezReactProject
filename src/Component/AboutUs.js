@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../logo.webp";
+import Logo from "../../src/assets/images/logo.webp";
 
 const AboutUs = () => {
   return (
